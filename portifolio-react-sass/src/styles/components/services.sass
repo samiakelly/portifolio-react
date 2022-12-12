@@ -1,0 +1,33 @@
+@use '../variables'
+
+.services-container
+  display: flex
+
+  .services-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 0.75rem
+    background-color: variables.$bg-color-secondary
+    padding: 0.75rem
+    border-radius: variables.$card-border-radius
+    margin: 0 .45rem
+
+    div
+      margin-top: .75rem
+      text-align: center
+
+      h3
+        color: variables.$text-color
+        margin-bottom: 1.3rem
+        justify-content: start
+
+    svg
+      font-size: 3rem
+
+@media (max-width: 768px)
+  .services-container
+    flex-direction: column
+
+    .services-card
+      margin-top: 0.75rem

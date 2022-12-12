@@ -1,0 +1,26 @@
+@use '../variables'
+
+#portifolio
+  background-image: url("https://www.alura.com.br/artigos/assets/sistema-codigo-binario/sistema-codigo-binario.png")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  width: 100%
+  height: 100%
+  position: absolut
+  display: flex
+  flex-wrap: wrap
+  padding: 3rem
+  gap: 3rem
+
+  h1
+    width: 100%
+    font-size: 5rem
+    margin-bottom: 4rem
+    background: variables.$gradiente
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+@media (max-width: 768px)
+  html
+    font-size: 87.5%
